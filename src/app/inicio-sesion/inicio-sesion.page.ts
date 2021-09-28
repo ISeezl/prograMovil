@@ -14,8 +14,6 @@ export class InicioSesionPage implements OnInit {
   constructor(private router:Router,private animationCtrl:AnimationController) { }
 
   goToMenu(){
-    
-    
     if(this.nombreUsuario == null){
       let navigationExtras:NavigationExtras = {
         queryParams:{

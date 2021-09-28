@@ -19,7 +19,7 @@ export class MenuPage implements OnInit {
       if(params && params.mensaje){
         this.mensaje = params.mensaje;
       }else{
-        this.mensaje = "mensaje no recibido"
+        this.mensaje = "Error inico sesion"
       }
     })
 
@@ -30,6 +30,10 @@ export class MenuPage implements OnInit {
 
   }
 
+  backtoInicio(){
+    this.router.navigate(['/inicio-sesion'])
+
+  }
   ngAfterViewInit(){
     const animation = this.animationCtrl.create().
     addElement(document.querySelector('.nombreTaller'))

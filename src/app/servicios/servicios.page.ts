@@ -15,6 +15,11 @@ export class ServiciosPage implements OnInit {
 
   }
 
+  backtomenu(){
+    this.router.navigate(['/menu/'])
+
+  }
+
   ngOnInit() {
   }
 
