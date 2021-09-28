@@ -19,14 +19,7 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
-  {
-    path: 'servicios',
-    loadChildren: () => import('./servicios/servicios.module').then( m => m.ServiciosPageModule)
-  },
-  {
-    path: 'reserva-hora',
-    loadChildren: () => import('./reserva-hora/reserva-hora.module').then( m => m.ReservaHoraPageModule)
-  },
+  
 ];
 
 @NgModule({
