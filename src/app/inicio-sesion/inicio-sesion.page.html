@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ServiExpress</ion-title>
+    <ion-title class="nombreTaller">ServiExpress</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
@@ -10,8 +10,8 @@
     </ionic-title>
     <div class="componentesInicio">
       <ion-item>
-        <ion-label position="stacked">Usuario</ion-label>
-        <ion-input></ion-input>
+        <ion-label  position="stacked">Usuario</ion-label>
+        <ion-input [(ngModel)]="nombreUsuario"class="nombreUsuario"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Contraseña</ion-label>
