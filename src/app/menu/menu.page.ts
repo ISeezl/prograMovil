@@ -25,6 +25,11 @@ export class MenuPage implements OnInit {
 
   }
 
+  gotoServicios(){
+    this.router.navigate(['/servicios'])
+
+  }
+
   ngAfterViewInit(){
     const animation = this.animationCtrl.create().
     addElement(document.querySelector('.nombreTaller'))
